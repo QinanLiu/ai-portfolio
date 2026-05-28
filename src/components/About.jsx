@@ -1,5 +1,6 @@
 import MotionSection from "./MotionSection.jsx";
 import { copy } from "../data/i18n.js";
+import { assetUrl } from "../utils/assets.js";
 
 export default function About({ language }) {
   const content = copy[language].about;
@@ -18,7 +19,7 @@ export default function About({ language }) {
           <figure className="mt-10 overflow-hidden rounded-[6px] border border-paper/12 bg-paper/5 p-3 shadow-soft">
             <div className="image-grain aspect-[3/4] rounded-[4px]">
               <img
-                src="/images/self-portrait.jpg"
+                src={assetUrl("/images/self-portrait.jpg")}
                 alt={content.portraitAlt}
                 className="h-full w-full object-cover object-center saturate-[0.78] transition duration-700 hover:saturate-100"
               />

@@ -4,6 +4,7 @@ import { Maximize2, X } from "lucide-react";
 import MotionSection from "./MotionSection.jsx";
 import { copy, text } from "../data/i18n.js";
 import { works } from "../data/works.js";
+import { assetUrl } from "../utils/assets.js";
 
 export default function Portfolio({ language }) {
   const content = copy[language].portfolio;
@@ -74,7 +75,7 @@ export default function Portfolio({ language }) {
             >
               <div className="image-grain soft-vignette aspect-[16/10]">
                 <img
-                  src={work.image}
+                  src={assetUrl(work.image)}
                   alt=""
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.045]"
                 />
@@ -144,7 +145,7 @@ function WorkModal({ work, language, onClose }) {
         <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
           <div className="image-grain min-h-[360px] bg-ink">
             <img
-              src={detailImages[0]}
+              src={assetUrl(detailImages[0])}
               alt={title}
               className="h-full min-h-[360px] w-full object-contain"
             />
@@ -224,7 +225,7 @@ function WorkModal({ work, language, onClose }) {
                   className="overflow-hidden rounded-[6px] border border-paper/10 bg-ink"
                 >
                   <img
-                    src={image}
+                    src={assetUrl(image)}
                     alt={`${title} portfolio page ${index + 1}`}
                     className="h-auto w-full"
                     loading="lazy"
