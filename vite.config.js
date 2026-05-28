@@ -6,5 +6,5 @@ export default defineConfig({
   // GitHub Pages note:
   // - If your repo is username.github.io, keep base as "/".
   // - If your repo is a project page, change it to "/repo-name/".
-  base: "/",
+  base: "/ai-portfolio/",
 });
