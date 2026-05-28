@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+  <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="4"/><feComponentTransfer><feFuncA type="table" tableValues="0 .16"/></feComponentTransfer></filter>
+    <linearGradient id="g" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#0d0d0d"/><stop offset=".44" stop-color="#aab6bd"/><stop offset="1" stop-color="#f4efe6"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)"/>
+  <rect x="150" y="190" width="900" height="1120" fill="none" stroke="#f4efe6" stroke-width="18" opacity=".42"/>
+  <rect x="235" y="290" width="730" height="920" fill="#0d0d0d" opacity=".18"/>
+  <path d="M235 1000 H965" stroke="#7d3030" stroke-width="30" opacity=".44"/>
+  <rect width="1200" height="1500" filter="url(#grain)"/>
+  <text x="86" y="1350" fill="#0d0d0d" font-family="Georgia" font-size="72">Almost Home</text>
+</svg>
