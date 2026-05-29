@@ -308,8 +308,8 @@ export const works = [
       { zh: "伤口", en: "Wound" },
       { zh: "亲密", en: "Intimacy" },
     ],
-    image: "/images/portfolio/portfolio-page-19.jpg",
-    detailImages: ["/images/portfolio/portfolio-page-19.jpg"],
+    image: "/images/portfolio/portfolio-page-30.jpg",
+    detailImages: ["/images/portfolio/portfolio-page-30.jpg"],
     description: {
       zh: "以油画颜料、画布和缝线完成的绘画作品。",
       en: "A painting made with oil paint, canvas, and sewing thread.",
